@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#0B0B12"/>
+      <stop offset="100%" stop-color="#15151E"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.1" cy="0.1" r="0.6">
+      <stop offset="0%"  stop-color="#6C5CE7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.95" cy="0.85" r="0.6">
+      <stop offset="0%"  stop-color="#00B894" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00B894" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#A99AFF"/>
+      <stop offset="50%" stop-color="#44C4FF"/>
+      <stop offset="100%" stop-color="#19D4A6"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#00B894"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 105 H1200 M0 210 H1200 M0 315 H1200 M0 420 H1200 M0 525 H1200"/>
+    <path d="M120 0 V630 M240 0 V630 M360 0 V630 M480 0 V630 M600 0 V630 M720 0 V630 M840 0 V630 M960 0 V630 M1080 0 V630"/>
+  </g>
+
+  <!-- Icon -->
+  <g transform="translate(100 215)">
+    <rect width="200" height="200" rx="48" fill="url(#badge)"/>
+    <g transform="translate(100 100)">
+      <path d="M -46 -36 L -8 0 L -46 36 L -58 36 L -22 0 L -58 -36 Z" fill="#fff"/>
+      <path d="M  46 -36 L  8 0 L  46 36 L  58 36 L  22 0 L 58 -36 Z" fill="#EAFFF7"/>
+      <rect x="-3" y="-52" width="6" height="104" rx="3" fill="#fff"/>
+    </g>
+  </g>
+
+  <!-- Wordmark + tagline -->
+  <g font-family="Plus Jakarta Sans, Inter, system-ui, sans-serif">
+    <text x="340" y="305" font-size="120" font-weight="800" fill="url(#title)" letter-spacing="-4">Expensplit</text>
+    <text x="340" y="370" font-size="36" font-weight="500" fill="#E9E9F2" opacity="0.85">Split expenses the smart way.</text>
+    <text x="340" y="420" font-size="24" font-weight="500" fill="#8C8CA1">Groups · Smart Splits · Settlements · Real-time sync</text>
+  </g>
+
+  <!-- pill -->
+  <g transform="translate(100 510)">
+    <rect width="280" height="56" rx="28" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="140" y="36" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="20" font-weight="600" fill="#E9E9F2">expensplit.futureoxtech.com</text>
+  </g>
+</svg>

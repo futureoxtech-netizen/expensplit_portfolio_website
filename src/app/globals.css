@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark light;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ink-950 text-ink-100 antialiased font-sans;
+    background-image:
+      radial-gradient(ellipse 1200px 600px at 50% -200px, rgba(108,92,231,0.25), transparent 60%),
+      radial-gradient(ellipse 800px 500px at 90% 10%, rgba(0,184,148,0.12), transparent 60%);
+    background-attachment: fixed;
+  }
+  ::selection {
+    background: #6C5CE7;
+    color: #fff;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-white;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-400/60;
+  }
+  .btn-primary {
+    @apply btn bg-brand-gradient text-white shadow-glow hover:shadow-glow-mint hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply btn border border-white/15 bg-white/5 text-white hover:bg-white/10;
+  }
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-ink-100/80;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #A99AFF 0%, #44C4FF 50%, #19D4A6 100%);
+  }
+  .prose-legal {
+    @apply text-ink-100/85 leading-relaxed;
+  }
+  .prose-legal h2 {
+    @apply text-2xl mt-10 mb-3 text-white;
+  }
+  .prose-legal h3 {
+    @apply text-lg mt-6 mb-2 text-white;
+  }
+  .prose-legal p {
+    @apply my-3;
+  }
+  .prose-legal ul {
+    @apply list-disc pl-6 my-3 space-y-1.5;
+  }
+  .prose-legal a {
+    @apply text-brand-300 hover:text-brand-200 underline underline-offset-2;
+  }
+  .prose-legal strong {
+    @apply text-white;
+  }
+}

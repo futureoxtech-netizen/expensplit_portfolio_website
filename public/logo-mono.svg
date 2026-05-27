@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Expensplit mono">
+  <rect x="32" y="32" width="448" height="448" rx="112" ry="112" fill="#111126"/>
+  <g transform="translate(256 256)">
+    <path d="M -118 -90 L -22 0 L -118 90 L -150 90 L -54 0 L -150 -90 Z" fill="#ffffff"/>
+    <path d="M  118 -90 L  22 0 L  118 90 L  150 90 L  54 0 L 150 -90 Z" fill="#ffffff" opacity="0.8"/>
+    <rect x="-7" y="-130" width="14" height="260" rx="7" fill="#ffffff"/>
+  </g>
+</svg>
