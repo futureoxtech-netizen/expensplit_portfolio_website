@@ -4,13 +4,9 @@ import { PhoneMockup } from './PhoneMockup';
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="container-x relative pt-16 pb-20 md:pt-24 md:pb-28">
-        <div className="grid items-center gap-12 md:grid-cols-2">
+      <div className="container-x relative pt-12 pb-20 md:pt-16 md:pb-28">
+        <div className="grid items-start gap-12 md:grid-cols-2">
           <div className="animate-fade-up">
-            <span className="chip mb-6">
-              <span className="h-1.5 w-1.5 rounded-full bg-mint-400" />
-              New · Real-time sync &amp; QR group invites
-            </span>
             <h1 className="font-display text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
               Split expenses <br className="hidden sm:block" />
               the <span className="gradient-text">smart way.</span>
