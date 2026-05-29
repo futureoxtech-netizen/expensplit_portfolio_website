@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     description: SITE.description,
     images: [
       {
-        url: '/og-image.svg',
+        url: '/expensplit_witthour_backround.png',
         width: 1200,
         height: 630,
         alt: `${SITE.name} — ${SITE.tagline}`,
-        type: 'image/svg+xml',
+        type: 'image/png',
       },
     ],
   },
@@ -58,15 +58,15 @@ export const metadata: Metadata = {
     creator: SITE.twitter,
     title: `${SITE.name} — ${SITE.tagline}`,
     description: SITE.description,
-    images: ['/og-image.svg'],
+    images: ['/expensplit_witthour_backround.png'],
   },
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/logo-icon.svg', sizes: '512x512', type: 'image/svg+xml' },
+      { url: '/expensplit_witthour_backround.png', type: 'image/png' },
+      { url: '/expensplit_witthour_backround.png', sizes: '512x512', type: 'image/png' },
     ],
-    apple: [{ url: '/logo-icon.svg', sizes: '512x512' }],
-    shortcut: '/favicon.svg',
+    apple: [{ url: '/expensplit_witthour_backround.png', sizes: '512x512' }],
+    shortcut: '/expensplit_witthour_backround.png',
   },
   manifest: '/manifest.webmanifest',
   robots: {
@@ -103,7 +103,7 @@ const orgJsonLd = {
   '@type': 'Organization',
   name: SITE.company,
   url: SITE.parent,
-  logo: `${SITE.url}/logo-icon.svg`,
+  logo: `${SITE.url}/expensplit_witthour_backround.png`,
   email: SITE.email,
   sameAs: [SITE.parent],
 };
@@ -116,7 +116,7 @@ const softwareJsonLd = {
   operatingSystem: 'Android, Web',
   description: SITE.description,
   url: SITE.url,
-  image: `${SITE.url}/og-image.svg`,
+  image: `${SITE.url}/expensplit_witthour_backround.png`,
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   publisher: { '@type': 'Organization', name: SITE.company, url: SITE.parent },
   aggregateRating: {

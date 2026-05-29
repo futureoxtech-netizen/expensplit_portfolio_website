@@ -28,58 +28,15 @@ export default function DeleteAccountPage() {
             <li>Confirm with your password. That&apos;s it.</li>
           </ol>
 
-          <h2>2. Delete via web form</h2>
+          <h2>2. Request deletion by email</h2>
           <p>
-            If you no longer have the app installed, request deletion by emailing us — we will verify
-            and process within 7 business days.
+            If you no longer have the app installed, email{' '}
+            <a href={`mailto:${SITE.privacyEmail}?subject=Delete%20my%20Expensplit%20account`}>
+              {SITE.privacyEmail}
+            </a>{' '}
+            from your account email address with the subject &ldquo;Delete my Expensplit account&rdquo;.
+            We will verify and process your request within 7 business days.
           </p>
-          <form
-            action={`mailto:${SITE.privacyEmail}?subject=Delete%20my%20Expensplit%20account`}
-            method="post"
-            encType="text/plain"
-            className="mt-4 grid gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-6 md:grid-cols-2"
-          >
-            <label className="block">
-              <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-ink-400">Account email *</span>
-              <input
-                type="email"
-                name="email"
-                required
-                className="w-full rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2.5 text-sm text-white placeholder-ink-400 focus:border-brand-400 focus:outline-none"
-                placeholder="you@example.com"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-ink-400">Account display name</span>
-              <input
-                name="name"
-                className="w-full rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2.5 text-sm text-white placeholder-ink-400 focus:border-brand-400 focus:outline-none"
-                placeholder="Your name"
-              />
-            </label>
-            <label className="block md:col-span-2">
-              <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-ink-400">Reason (optional)</span>
-              <textarea
-                name="reason"
-                rows={4}
-                className="w-full rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2.5 text-sm text-white placeholder-ink-400 focus:border-brand-400 focus:outline-none"
-                placeholder="Optional — helps us improve."
-              />
-            </label>
-            <div className="md:col-span-2">
-              <label className="flex items-start gap-3 text-sm text-ink-100/85">
-                <input type="checkbox" required className="mt-1" />
-                <span>
-                  I understand this action is permanent and will delete my account, personal expenses,
-                  settlement history, and notifications. Data I created inside groups shared with
-                  other people may be retained with my name replaced by &ldquo;Deleted user&rdquo;.
-                </span>
-              </label>
-            </div>
-            <div className="md:col-span-2">
-              <button type="submit" className="btn-primary">Request deletion</button>
-            </div>
-          </form>
 
           <h2>3. What we delete</h2>
           <ul>

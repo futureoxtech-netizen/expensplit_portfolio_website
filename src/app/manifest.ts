@@ -13,9 +13,9 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: 'portrait',
     categories: ['finance', 'productivity', 'lifestyle'],
     icons: [
-      { src: '/logo-icon.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any' },
-      { src: '/favicon.svg',   sizes: 'any',     type: 'image/svg+xml', purpose: 'any' },
-      { src: '/logo-mono.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'maskable' },
+      { src: '/expensplit_witthour_backround.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+      { src: '/expensplit_witthour_backround.png', sizes: 'any',     type: 'image/png', purpose: 'any' },
+      { src: '/expensplit_witthour_backround.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ],
   };
 }
