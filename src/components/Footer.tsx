@@ -31,7 +31,7 @@ const COLS = [
   },
 ] as const;
 
-//test commit
+//test commit sd
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-white/10 bg-ink-950/60">
